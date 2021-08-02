@@ -1,0 +1,128 @@
+.profileSlider {
+  position: relative;
+  height: 40vh;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 10px;
+
+  .card {
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    height: 40vh;
+    // border: 3rem, solid, black;
+    justify-content: flex-end;
+    border-radius: 7px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.3);
+    .arrows {
+      width: 25vw;
+      height: 20vh;
+      display: flex;
+      align-self: flex-end;
+      .leftArrow {
+        position: relative;
+        display: flex;
+        // top: 30%;
+        left: 20px;
+        font-size: 3rem;
+        z-index: 10;
+        cursor: pointer;
+        flex-grow: 1;
+        justify-content: flex-start;
+        align-self: center;
+      }
+      .rightArrow {
+        position: relative;
+        display: flex;
+        // top: 50%;
+        right: 20px;
+        font-size: 3rem;
+        z-index: 10;
+        cursor: pointer;
+        flex-grow: 1;
+        justify-content: flex-end;
+        align-self: center;
+      }
+    }
+    .cardBottom {
+      // align-self: flex-start;
+      width: 100%;
+      justify-self: flex-end;
+      padding-bottom: 10px;
+      .userInfo {
+        // z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        .basicInfo {
+          display: flex;
+          flex-direction: row;
+          justify-self: flex-start;
+          align-items: center;
+          height: 20px;
+          // line-height: 50%;
+          .nameAndAge {
+            color: white;
+            height: 100%;
+            // margin: 0;
+          }
+          .infoBtn {
+            width: 15px;
+            height: 15px;
+            border-radius: 1rem;
+            justify-content: center;
+            cursor: pointer;
+            // padding: 0;
+          }
+        }
+        .description {
+          color: white;
+          // margin: 0;
+        }
+        .heightAndEducation {
+          color: darkgray;
+          // margin: 0;
+        }
+      }
+      .userInfo > * {
+        margin: 2px 11.13px;
+      }
+      .buttons {
+        display: flex;
+        height: 28px;
+        width: 100%;
+        // justify-items: center;
+        justify-content: center;
+
+        .dislikeBtn {
+          color: lightgrey;
+          height: 100%;
+          width: 11%;
+          font-weight: bold;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+        .likeBtn {
+          color: white;
+          background-color: rgb(65, 138, 247);
+          height: 100%;
+          width: 70%;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+        .interestBtn {
+          color: white;
+          background-color: rgb(65, 138, 247);
+          width: 11%;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
